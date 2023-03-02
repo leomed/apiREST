@@ -1,0 +1,24 @@
+
+
+
+<%articlesInHtml.forEach(function(article){%>
+
+ <p style="color:red"> <%=  article.title%></p>
+  <p> <%=  article.content%></p>
+<%});%>
+
+
+<h3>Delete Article</h3>
+
+<form action="/delete" method="post">
+<button type="submit"></button>
+
+</form>
+
+<h2> Add article</h2>
+<form action="/articles" method="POST">
+<input type="text" name="title" placeholder="Title">
+<input type="text" name="content" placeholder="Content">
+
+<button type="submit" name="submitForm"></button>
+</form>
